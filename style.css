@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url("src/assets/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+/* Responsiveness */
+@media screen and (max-width:490px) {
+    body{
+        background-image: url("src/assets/images/pattern-background-mobile.svg"); 
+        background-size: contain; 
+    }
+    .inner-container{
+        height: 567px;
+        width: 327px;
+    }
+    .item-image>img{
+width: 100%;
+height: 160px;
+    }
+    
+}
+.outer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex: 1;
+}
+.inner-container{
+    height: 697px;
+    width: 450px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+.grid-container{
+    display: grid;
+    text-align: center;
+    grid-auto-rows: auto;
+    padding-bottom: 24px;
+}
+
+/* Card Top Section */
+.item-image>img{
+    border-radius: 15px 15px 0 0;
+}
+.first-item>p{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: hsl(223, 47%, 23%);
+ opacity: 0.5;
+    
+}
+/* Card Middle Section   */
+.second-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.3fr;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+    height: 100px;
+    background-color: hsl(225, 100%, 98%);
+    margin: 23px auto 30px auto;
+    border-radius: 10px;
+    
+}
+
+.second-item-child>a{
+    text-decoration: underline;
+    color: #746CEA;
+    font-weight: 700;
+    padding-left: 40px;
+}
+.second-item-child>a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.second-item-child>h4>span{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+    color: hsl(223, 47%, 23%);
+ opacity: 0.5;
+}
+.second-item-child>h4,span{
+    padding-right: 15px;
+}
+/* Card Bottom Section */
+
+.third-item>button{
+    width: 355px;
+    height: 50px;
+    border: none;
+    background-color:hsl(245, 75%, 52%) ;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 900;
+    box-shadow:0px 35px 7px hsl(225, 100%, 98%);
+    margin-bottom:35px ;
+}
+.third-item>button:hover{
+    background-color: #746CEA;
+    cursor: pointer;
+}
+.third-item>p{
+ font-weight: 900; 
+ color: hsl(223, 47%, 23%);
+ opacity: 0.5;
+ margin-bottom: 53px;
+}
+/* Footer Section */
+footer{
+    position: absolute;
+    text-align: center;
+    align-self: self-end;
+    font-size: 13px; 
+}
+
+footer>p{
+    opacity: 0.9;
+}
+
+.icon{
+    vertical-align: middle; 
+    color: hsl(223, 47%, 23%);
+}
